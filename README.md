@@ -1,5 +1,7 @@
 # vuepress-plugin-feedback-panel
 
+[![npm version](https://badge.fury.io/js/vuepress-plugin-feedback-panel.svg)](https://badge.fury.io/js/vuepress-plugin-feedback-panel)
+
 A VuePress 1.x plugin that adds a global feedback widget to your website.
 
 When enabled, the plugin adds a button in the bottom-right corner of your site:
@@ -239,3 +241,7 @@ Feel free to open Issues or Pull Requests if you want to contribute.
 
 I'm using [reelase-it](https://www.npmjs.com/package/release-it) to release new
 versions of this package.
+
+## Author
+
+[marcinjahn.com](https://marcinjahn.com)
