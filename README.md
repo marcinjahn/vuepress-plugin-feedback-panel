@@ -2,7 +2,7 @@
 
 A VuePress 1.x plugin that adds a global feedback widget to your website.
 
-When enabled, the plugin adds a button in the bottom-right corer of your site:
+When enabled, the plugin adds a button in the bottom-right corner of your site:
 
 ![](./media/button-on-page.png)
 
@@ -26,8 +26,9 @@ npm install -D vuepress-plugin-feedback-panel
 
 Here's an example of plugin's configuration in `.vuepress/config.js`:
 
-```json
- plugins: [
+```js
+{
+  plugins: [
     [
       "vuepress-plugin-feedback-panel",
       {
@@ -68,6 +69,8 @@ Here's an example of plugin's configuration in `.vuepress/config.js`:
       },
     ]
   ],
+  // ... all the other things in your config
+}
 ```
 
 ### submissionWebhook
@@ -78,25 +81,25 @@ POST request:
 
 ```json
 {
-    "answers": [
-        {
-            "question": "1. How do you like this website?",
-            "answer": 4,
-            "questionId": 0
-        },
-        {
-            "question": "2. Would you recommend this website to a friend?",
-            "answer": false,
-            "questionId": 1
-        },
-        {
-            "question": "2b. What was missing?",
-            "answer": "It's too technical",
-            "questionId": 2
-        }
-    ],
-    "timestamp": "2022-04-21T09:52:29.794Z",
-    "siteUrl": "http://localhost:8080/programming/"
+  "answers": [
+    {
+      "question": "1. How do you like this website?",
+      "answer": 4,
+      "questionId": 0
+    },
+    {
+      "question": "2. Would you recommend this website to a friend?",
+      "answer": false,
+      "questionId": 1
+    },
+    {
+      "question": "2b. What was missing?",
+      "answer": "It's too technical",
+      "questionId": 2
+    }
+  ],
+  "timestamp": "2022-04-21T09:52:29.794Z",
+  "siteUrl": "http://localhost:8080/programming/"
 }
 ```
 
@@ -133,13 +136,13 @@ Here's an example of such an object:
 
 ```json
 {
-    id: 0,
-    questionText: "1. How do you like this website?",
-    questionNumber: "1",
-    component: "StarQuestion",
-    normalNext: 1,
-    skippable: true,
-    canBack: false
+  "id": 0,
+  "questionText": "1. How do you like this website?",
+  "questionNumber": "1",
+  "component": "StarQuestion",
+  "normalNext": 1,
+  "skippable": true,
+  "canBack": false
 }
 ```
 
@@ -168,65 +171,65 @@ The following question types are available:
 
 - `Star Queestion`
 
-    This question allows your users to rate something with 1-5 stars.
+  This question allows your users to rate something with 1-5 stars.
 
-    Example:
+  Example:
 
-    ```json
-    {
-        id: 0,
-        questionText: "1. How do you like this website?",
-        questionNumber: "1",
-        component: "StarQuestion",
-        normalNext: 1,
-        skippable: true,
-        canBack: false
-    }
-    ```
+  ```json
+  {
+    "id": 0,
+    "questionText": "1. How do you like this website?",
+    "questionNumber": "1",
+    "component": "StarQuestion",
+    "normalNext": 1,
+    "skippable": true,
+    "canBack": false
+  }
+  ```
 
-    ![](media/star-question.png)
+  ![](media/star-question.png)
 
 - `BinaryQuestion`
 
-    This question allows you users to answer Yes/No to some question.
+  This question allows you users to answer Yes/No to some question.
 
-    Example:
+  Example:
 
-    ```json
-    {
-        id: 1,
-        questionText: "2. Would you recommend this website to a friend?",
-        questionNumber: "2",
-        component: "BinaryQuestion",
-        normalNext: null,
-        optionalNext: 2,
-        skippable: true,
-        canBack: true
-    }
-    ```
+  ```json
+  {
+    "id": 1,
+    "questionText": "2. Would you recommend this website to a friend?",
+    "questionNumber": "2",
+    "component": "BinaryQuestion",
+    "normalNext": null,
+    "optionalNext": 2,
+    "skippable": true,
+    "canBack": true
+  }
+  ```
 
-    ![](media/binary-question.png)
+  ![](media/binary-question.png)
 
 - `OpenQuestion`
 
-    This question allows your users to provide more detailed input using a text
-    box.
+  This question allows your users to provide more detailed input using a text
+  box.
 
-    Example:
+  Example:
 
-    ```json
-    {
-        id: 2,
-        questionText: "2b. What was missing?",
-        questionNumber: "2",
-        component: "OpenQuestion",
-        normalNext: null,
-        skippable: false,
-        canBack: true
-    }
-    ```
+  ```json
+  {
+    "id": 2,
+    "questionText": "2b. What was missing?",
+    "questionNumber": "2",
+    "component": "OpenQuestion",
+    "normalNext": null,
+    "skippable": false,
+    "canBack": true
+  }
+  ```
 
-    ![](media/open-question.png)
+  ![](media/open-question.png)
 
 ## Contributing
 
