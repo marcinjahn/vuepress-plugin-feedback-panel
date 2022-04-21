@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-feedback-panel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A configurable feedback widget plugin for Vuepress 1.x",
   "keywords": [
     "vue",
