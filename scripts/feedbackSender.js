@@ -25,8 +25,6 @@ async function sendBasic(feedback) {
     return;
   }
 
-  console.log(feedback);
-
   try {
     const httpResponse = await fetch(c.config.submissionWebhook, {
       method: "POST",
