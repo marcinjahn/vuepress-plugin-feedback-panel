@@ -4,12 +4,12 @@ A VuePress 1.x plugin that adds a global feedback widget to your website.
 
 When enabled, the plugin adds a button in the bottom-right corner of your site:
 
-![](./media/button-on-page.png)
+![](.media/button-on-page.png)
 
 When clicked, a panel shows up where your users can provide feedback about the
 website:
 
-![](media/star-question.png)
+![](.media/star-question.png)
 
 The questions list is configurable. The answers will be sent to the webhook URL
 that you have to provide in the configuration.
@@ -103,11 +103,11 @@ POST request:
 }
 ```
 
-All the provided answers will be provided. Each answer contans:
+All the provided answers will be provided. Each answer contains:
 
 - `question` - the text of the question
-- `answer` - the provided answer. The type of this field depends from the type
-  of question
+- `answer` - the provided answer. The type of this field depends on the type
+  of the question
 - `questionId` - the ID of the question
 
 Other than that, the object contains:
@@ -120,7 +120,7 @@ Other than that, the object contains:
 
 This setting controls the text being displayed on the feedback button
 
-![](media/press-me.png)
+![](.media/press-me.png)
 
 ### disableOnLocalhost
 
@@ -158,9 +158,9 @@ The fields are:
 - `normalNext` - the ID of the next question to be displayed when the user
   answers this one.
 - `optionalNext` - if the question type is "BinaryQuestion", and the user
-  answers "No", this question will be displayed next instead onf the
-  `normalNext`.
-- `skippable` - controls whether the "Skip" button should appear next to this
+  answers "No", this question will be displayed as the next one instead of the
+  `normalNext` one.
+- `skippable` - controls whether the "Skip" button should appear next to the
   question. Clicking that button would skip the current question.
 - `canBack`- controls whether the "Back" button should appear next to this
   question. Clicking that button would take user back to the previous question.
@@ -187,11 +187,11 @@ The following question types are available:
   }
   ```
 
-  ![](media/star-question.png)
+  ![](.media/star-question.png)
 
 - `BinaryQuestion`
 
-  This question allows you users to answer Yes/No to some question.
+  This question allows your users to answer Yes/No to some question.
 
   Example:
 
@@ -208,7 +208,7 @@ The following question types are available:
   }
   ```
 
-  ![](media/binary-question.png)
+  ![](.media/binary-question.png)
 
 - `OpenQuestion`
 
@@ -229,8 +229,13 @@ The following question types are available:
   }
   ```
 
-  ![](media/open-question.png)
+  ![](.media/open-question.png)
 
 ## Contributing
 
 Feel free to open Issues or Pull Requests if you want to contribute.
+
+## Releases
+
+I'm using [reelase-it](https://www.npmjs.com/package/release-it) to release new
+versions of this package.

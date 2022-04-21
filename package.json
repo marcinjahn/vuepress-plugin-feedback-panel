@@ -1,24 +1,30 @@
 {
-    "name": "vuepress-plugin-feedback-panel",
-    "version": "1.0.0",
-    "description": "A configurable feedback widget plugin for Vuepress 1.x",
-    "keywords": [
-        "vue",
-        "vuepress",
-        "feedback",
-        "survey",
-        "questions",
-        "panel"
-    ],
-    "main": "index.js",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/marcinjahn/vuepress-plugin-feedback-panel"
-    },
-    "author": "marcinjahn <marcinj10@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/marcinjahn/vuepress-plugin-feedback-panel"
-    },
-    "homepage": "https://marcinjahn.com/projects/feedback-panel-vuepress-plugin.html"
+  "name": "vuepress-plugin-feedback-panel",
+  "version": "1.0.0",
+  "description": "A configurable feedback widget plugin for Vuepress 1.x",
+  "keywords": [
+    "vue",
+    "vuepress",
+    "feedback",
+    "survey",
+    "questions",
+    "panel"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcinjahn/vuepress-plugin-feedback-panel"
+  },
+  "author": "marcinjahn <marcinj10@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcinjahn/vuepress-plugin-feedback-panel"
+  },
+  "homepage": "https://marcinjahn.com/projects/feedback-panel-vuepress-plugin.html",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^14.14.2"
   }
+}
